@@ -54,8 +54,8 @@ val androidTargetSdkVersion by extra(34)
 val androidCompileSdkVersion by extra(34)
 val androidCompileNdkVersion by extra("25.2.9519653")
 val androidBuildToolsVersion by extra("34.0.0")
-val androidSourceCompatibility by extra(JavaVersion.VERSION_17)
-val androidTargetCompatibility by extra(JavaVersion.VERSION_17)
+val androidSourceCompatibility by extra(JavaVersion.VERSION_21)
+val androidTargetCompatibility by extra(JavaVersion.VERSION_21)
 
 tasks.register<Delete>("clean") {
     delete(rootProject.buildDir)
