@@ -23,7 +23,7 @@ buildscript {
 
 val commitCount = run {
     val repo = FileRepository(rootProject.file(".git"))
-    val refId = repo.refDatabase.exactRef("refs/remotes/origin/master").objectId!!
+    val refId = repo.refDatabase.exactRef("refs/heads/1").objectId!!
     Git(repo).log().add(refId).call().count()
 }
 
